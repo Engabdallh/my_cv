@@ -4,129 +4,131 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>my-cv</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Abdallh Shatnawi | Software Developer</title>
+  <meta name="description"
+    content="Abdallh Shatnawi - Software Engineering graduate and Full Stack Developer specializing in Node.js, Express.js, React, and MySQL.">
+  <meta name="keywords"
+    content="Abdallh Shatnawi, Software Engineer, Backend Developer, Node.js, Express.js, React, MySQL, Portfolio">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Craftivo
-  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
-  * Updated: Oct 04 2025 with Bootstrap v5.3.8
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/language.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
+
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Craftivo</h1>
+        <h1 class="sitename">Abdallh</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#resume" data-i18n="nav.resume">Resume</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <button id="language-toggle" class="btn-getstarted language-toggle" type="button">
+        العربية
+      </button>
+
+      <a class="btn-getstarted" href="#about" data-i18n="nav.getStarted">Get Started</a>
 
     </div>
   </header>
+
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/profile/aaa.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/profile/aaa.jpg" alt="Abdallh Shatnawi" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Hi, I'm Abdallh Shatnawi</h2>
-            <p>I'm a <span class="typed" data-typed-items="Developer, Freelancer,Backend Developer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <p>
+              <span data-i18n="hero.title">I'm</span>
+              <span class="typed"
+                data-typed-items="Backend Developer, Full Stack Developer, Node.js Developer, Software Engineer"></span>
+              <span class="typed-cursor" aria-hidden="true"></span>
+            </p>
+
             <div class="social-links">
-              <a href="https://x.com/AbdallhWae16340?t=0giJ-lDOTtyUMfyUSVY8Cg&s=08"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://www.facebook.com/share/1BrUXxHyFz/"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/abdallh_wael_?igsh=eHk1YzV0d2pwNGFw"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/abdallh-shatnawi-8845b3318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+              <a href="https://x.com/AbdallhWae16340?t=0giJ-lDOTtyUMfyUSVY8Cg&s=08" target="_blank"
+                rel="noopener noreferrer" aria-label="X">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1DRHYXEj66/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/abdallh_wael_?igsh=eHk1YzV0d2pwNGFw" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/abdallh-shatnawi-b4743a3b3?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- End Hero Section -->
+
 
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">About Me</span>
         <h2>About Me</h2>
-        <p></p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
+
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
             <div class="profile-card">
+
               <div class="profile-header">
                 <div class="profile-avatar">
-                  <img src="assets/img/profile/a.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/profile/a.jpg" class="img-fluid" alt="Abdallh Shatnawi">
                   <div class="status-indicator"></div>
                 </div>
+
                 <h3>Abdallh Shatnawi</h3>
                 <span class="role">Full Stack Developer</span>
+
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -139,12 +141,12 @@
 
               <div class="profile-stats">
                 <div class="stat-item">
-                  <h4>10</h4>
+                  <h4>4</h4>
                   <p>Projects</p>
                 </div>
                 <div class="stat-item">
                   <h4>6+</h4>
-                  <p>months</p>
+                  <p>Months</p>
                 </div>
                 <div class="stat-item">
                   <h4>0</h4>
@@ -153,35 +155,69 @@
               </div>
 
               <div class="profile-actions">
-                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
-                <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+                <a href="files/Abdallh-Shatnawi-CV.pdf" class="btn-primary" download>
+                  <i class="bi bi-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <i class="bi bi-envelope"></i> Contact
+                </a>
               </div>
 
               <div class="social-connect">
-                <a href="https://www.linkedin.com/in/abdallh-shatnawi-8845b3318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/abdallhww"><i class="bi bi-github"></i></a>
-                <a href="https://www.facebook.com/abdullah.shatnawi.479712"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.instagram.com/abdallh_wael_?igsh=eHk1YzV0d2pwNGFw"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/abdallh-shatnawi-b4743a3b3?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/Engabdallh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1DRHYXEj66/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/abdallh_wael_?igsh=eHk1YzV0d2pwNGFw" target="_blank"
+                  rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
               </div>
+
             </div>
           </div>
 
+
           <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
             <div class="content-wrapper">
+
               <div class="bio-section">
                 <div class="section-tag">About Me</div>
-                <h2>....</h2>
-                <p>Hello! I'm Abdullah Shatnawi, a web developer passionate about creating modern and seamless user experiences. I love technical challenges and learning new technologies,
-                   and I always strive to develop my skills and turn ideas into real projects and
-                    I enjoy turning ideas into real-world projects that combine beauty and functionality.
-                 </div>
+                <h2>Building Digital Solutions Through Code</h2>
+
+                <p data-i18n="about.description">
+                  I'm Abdallh Shatnawi, a Software Engineering graduate from
+                  Jordan University of Science and Technology (JUST), passionate
+                  about building modern web applications and practical software solutions.
+
+                  I focus on full-stack web development, working with technologies
+                  such as JavaScript, React, Node.js, Express.js, and MySQL.
+
+                  Through hands-on personal projects, I have developed experience
+                  in building RESTful APIs, managing databases, implementing
+                  authentication systems, and developing responsive web applications.
+
+                  I'm continuously learning, improving my technical skills, and
+                  looking for opportunities to contribute to real-world projects
+                  and grow as a software developer.
+                </p>
+              </div>
+
 
               <div class="details-grid">
+
                 <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
                   <i class="bi bi-briefcase"></i>
                   <div class="detail-content">
                     <span>Experience</span>
-                    <strong>6+ months</strong>
+                    <strong>Personal Projects</strong>
                   </div>
                 </div>
 
@@ -189,7 +225,8 @@
                   <i class="bi bi-mortarboard"></i>
                   <div class="detail-content">
                     <span>Degree</span>
-                    <strong>Bachelor's degree in Software Engineering / Jordan University of Science and Technology</strong>
+                    <strong>Bachelor's Degree in Software Engineering / Jordan University of Science and
+                      Technology</strong>
                   </div>
                 </div>
 
@@ -197,7 +234,7 @@
                   <i class="bi bi-geo-alt"></i>
                   <div class="detail-content">
                     <span>Based In</span>
-                    <strong>Irbid / Na'imah</strong>
+                    <strong>Irbid, Jordan</strong>
                   </div>
                 </div>
 
@@ -205,7 +242,9 @@
                   <i class="bi bi-envelope"></i>
                   <div class="detail-content">
                     <span>Email</span>
-                    <strong>abdallhshatnawi112@gmail.com</strong>
+                    <strong>
+                      <a href="mailto:abdallhshatnawi112@gmail.com">abdallhshatnawi112@gmail.com</a>
+                    </strong>
                   </div>
                 </div>
 
@@ -213,7 +252,9 @@
                   <i class="bi bi-phone"></i>
                   <div class="detail-content">
                     <span>Phone</span>
-                    <strong>+962 (79) 999-6890</strong>
+                    <strong>
+                      <a href="tel:+962782950775">+962 78 295 0775</a>
+                    </strong>
                   </div>
                 </div>
 
@@ -224,20 +265,25 @@
                     <strong>Open to Work</strong>
                   </div>
                 </div>
+
               </div>
 
+
+              <!-- Skills -->
               <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
                 <div class="section-tag">Core Skills</div>
                 <h3>Technical Proficiency</h3>
 
                 <div class="skills-list skills-animation">
+
                   <div class="skill-item">
                     <div class="skill-info">
                       <span class="skill-name">React &amp; Next.js</span>
                       <span class="skill-percent">60%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -247,7 +293,8 @@
                       <span class="skill-percent">90%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -257,17 +304,19 @@
                       <span class="skill-percent">65%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
                   <div class="skill-item">
                     <div class="skill-info">
-                      <span class="skill-name">workbench &amp; MYSQL</span>
+                      <span class="skill-name">MySQL &amp; MySQL Workbench</span>
                       <span class="skill-percent">85%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -277,66 +326,87 @@
                       <span class="skill-percent">65%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
+
                 </div>
               </div>
+              <!-- End Skills -->
+
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
-    </section><!-- /About Section -->
+    </section>
+    <!-- End About Section -->
+
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Resume</span>
         <h2>Resume</h2>
-        <p>Abdallah Shatnawi is a web developer with experience in HTML,JavaScript, and Node.js.,MYSQL workbench.
-           Skilled in building responsive and visually appealing interfaces, he focuses on blending 
-           design and functionality to create modern digital experiences. He also has a background 
-           in Quality Assurance and is committed to continuous learning and professional growth.  
-          </p>
-      </div><!-- End Section Title -->
+        <p>
+          Abdallh Shatnawi is a Software Engineering graduate with knowledge
+          of HTML, CSS, JavaScript, Node.js, Express.js, and MySQL.
+          He focuses on building responsive web applications and backend systems.
+          He also has a background in Quality Assurance and is committed to
+          continuous learning and professional growth.
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
+
           <div class="col-lg-6">
             <div class="experience-section">
+
               <div class="section-header" data-aos="fade-right" data-aos-delay="200">
                 <div class="header-content">
                   <span class="section-badge">Experience</span>
                   <h2>Professional Journey</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    I'm a Software Engineering graduate passionate about building
+                    web applications and backend systems. I focus on developing
+                    practical projects, improving my technical skills, and creating
+                    efficient software solutions using Node.js, Express.js, and MySQL.
+                  </p>
                 </div>
               </div>
 
               <div class="experience-cards">
+
                 <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
                   <div class="card-header">
                     <div class="company-logo">
                       <i class="bi bi-buildings"></i>
                     </div>
-                    <div class="period-badge">Current</div>
+                    <div class="period-badge">Training</div>
                   </div>
+
                   <div class="card-body">
-                    <h3>Senior Creative Director</h3>
-                    <p class="company-name">Digital Innovation Labs</p>
-                    <span class="duration">2023 - Present</span>
-                    <p class="description">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
+                    <h3>Node.js Backend Development</h3>
+                    <p class="company-name"> Course</p>
+                    <span class="duration">2025/1/15</span>
+                    <p class="description">
+                      Completed practical training in backend development using
+                      Node.js and Express.js, covering RESTful APIs, server-side
+                      development, routing, middleware, and database integration.
+                    </p>
                     <div class="skills-tags">
-                      <span class="skill-tag">Leadership</span>
-                      <span class="skill-tag">Strategy</span>
-                      <span class="skill-tag">Innovation</span>
+                      <span class="skill-tag">Node.js</span>
+                      <span class="skill-tag">Express.js</span>
+                      <span class="skill-tag">REST APIs</span>
                     </div>
                   </div>
                 </div>
+
 
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
                   <div class="card-header">
@@ -344,13 +414,19 @@
                       <i class="bi bi-laptop"></i>
                     </div>
                   </div>
+
                   <div class="card-body">
-                    <h3>Product Design Lead</h3>
-                    <p class="company-name">TechForward Solutions</p>
-                    <span class="duration">2020 - 2023</span>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+                    <h3>Software Quality Assurance (QA)</h3>
+                    <p class="company-name">QA Training Course</p>
+                    <span class="duration">2024/11/18</span>
+                    <p class="description">
+                      Completed practical training in software testing, test case
+                      design, bug reporting, and understanding software development
+                      quality processes.
+                    </p>
                   </div>
                 </div>
+
 
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
@@ -358,128 +434,195 @@
                       <i class="bi bi-palette"></i>
                     </div>
                   </div>
+
                   <div class="card-body">
-                    <h3>UX Designer</h3>
-                    <p class="company-name">Creative Studio Inc</p>
-                    <span class="duration">2017 - 2020</span>
-                    <p class="description">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Additional Technical Training</h3>
+                    <p class="company-name">Udemy – Online Courses</p>
+                    <span class="duration">2025 - 2026</span>
+                    <p class="description">
+                      Completed online courses covering Java programming,
+                      English language skills, Dart programming, Agile methodologies,
+                      Python programming, full-stack web development, and data science.
+                    </p>
+
+                    <div class="skills-tags">
+                      <span class="skill-tag">Java</span>
+                      <span class="skill-tag">Python</span>
+                      <span class="skill-tag">Dart</span>
+                      <span class="skill-tag">Full-Stack Development</span>
+                      <span class="skill-tag">Agile</span>
+                      <span class="skill-tag">Frontend</span>
+                      <span class="skill-tag">English</span>
+                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
 
+
           <div class="col-lg-6">
             <div class="education-section">
+
               <div class="section-header" data-aos="fade-left" data-aos-delay="200">
                 <div class="header-content">
                   <span class="section-badge">Education</span>
                   <h2>Academic Background</h2>
-                  <p></p>
                 </div>
               </div>
 
               <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
                 <div class="timeline-track">
+
                   <div class="timeline-item">
                     <div class="timeline-marker">
                       <i class="bi bi-mortarboard-fill"></i>
                     </div>
+
                     <div class="timeline-content">
                       <div class="education-meta">
                         <span class="year-range">2021-2025</span>
                         <span class="degree-level">Bachelor's</span>
                       </div>
-                      <h4>Bachelor's degree in Software Engineering</h4>
+                       
+                      <h4>Bachelor's Degree in Software Engineering</h4>
+                      <p class="institution">Jordan University of Science and Technology</p>
+
+                      <h4>Bachelor's Degree in Software Engineering</h4>
                       <p class="institution">Jordan University of Science and Technology</p>
                       <p class="description">
-                        Graduated with strong foundations in software development, system design, and project management. 
-                        Worked on multiple web-based projects focusing on user experience and efficient backend integration.
+                        Studied software engineering with foundations in software
+                        development, system design, and project management.
+                        Worked on web-based projects focusing on user experience
+                        and backend integration.
                       </p>
+
                       <div class="achievement">
                         <i class="bi bi-award"></i>
-                        <span>Graduated with a GPA of 2.95/4</span>
+                        <span>Graduated</span>
                       </div>
                     </div>
                   </div>
+
 
                   <div class="timeline-item">
                     <div class="timeline-marker">
                       <i class="bi bi-book"></i>
                     </div>
+
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2011 - 2015</span>
-                        <span class="degree-level">Bachelor</span>
+                        <span class="year-range">2025</span>
+                        <span class="degree-level">Professional Training</span>
                       </div>
-                      <h4>Bachelor of Fine Arts</h4>
-                      <p class="institution">Creative Arts University</p>
-                      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                      <h4>Node.js Backend Development Training</h4>
+                      <p class="institution">The Hope Company</p>
+
+                      <p class="description">
+                        Completed a practical training program in backend development
+                        using Node.js and Express.js, gaining experience in REST APIs,
+                        database integration, server-side development, and application architecture.
+                      </p>
                     </div>
                   </div>
+
 
                   <div class="timeline-item">
                     <div class="timeline-marker">
                       <i class="bi bi-patch-check-fill"></i>
                     </div>
+
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2016 - 2023</span>
+                        <span class="year-range">2023 - 2025</span>
                         <span class="degree-level">Certificates</span>
                       </div>
-                      <h4>Professional Certifications</h4>
+
+                      <h4>Professional Certifications &amp; Courses</h4>
+
                       <div class="certifications-list">
                         <div class="cert-item">
-                          <span class="cert-name">Advanced UX Research</span>
-                          <span class="cert-year">2023</span>
+                          <span class="cert-name">Java Programming</span>
+                          <span class="cert-year">Udemy</span>
                         </div>
                         <div class="cert-item">
-                          <span class="cert-name">Design Leadership</span>
-                          <span class="cert-year">2022</span>
+                          <span class="cert-name">Full-Stack Web Development</span>
+                          <span class="cert-year">Udemy</span>
                         </div>
                         <div class="cert-item">
-                          <span class="cert-name">Digital Strategy</span>
-                          <span class="cert-year">2021</span>
+                          <span class="cert-name">Python Programming</span>
+                          <span class="cert-year">Udemy</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Dart Programming Language</span>
+                          <span class="cert-year">Udemy</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Agile Methodologies</span>
+                          <span class="cert-year">Udemy</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Data Science &amp; Machine Learning</span>
+                          <span class="cert-year">Udemy</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">English Language – Grammar &amp; Communication</span>
+                          <span class="cert-year">Udemy</span>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
+
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
-    </section><!-- /Resume Section -->
+    </section>
+    <!-- End Resume Section -->
+
 
     <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Services</span>
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
-      </div><!-- End Section Title -->
+        <span class="subtitle">What I Do</span>
+        <h2>My Services</h2>
+        <p>
+          I offer full-stack web development services, building complete web applications
+          from responsive and user-friendly frontend interfaces to powerful backend systems
+          and database solutions. I focus on creating modern, scalable, and reliable digital
+          experiences using modern web technologies.
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
+
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-palette"></i>
               </div>
-              <h4>Brand Identity</h4>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus vivamus magna.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Full Stack Web Development</h4>
+              <p>
+                Building complete web applications with modern frontend interfaces,
+                powerful backend systems, and reliable database integration.
+              </p>
+              <a href="service-details.html?service=fullstack" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
+
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item featured">
@@ -487,93 +630,84 @@
               <div class="icon-wrapper">
                 <i class="bi bi-layout-text-window-reverse"></i>
               </div>
-              <h4>UI/UX Design</h4>
-              <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui donec rutrum.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Frontend Development</h4>
+              <p>
+                Creating modern, responsive, and user-friendly web interfaces using React,
+                JavaScript, HTML, and CSS to deliver seamless user experiences across all devices.
+              </p>
+              <a href="service-details.html?service=frontend" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
+
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <h4>Development</h4>
-              <p>Praesent sapien massa convallis a pellentesque nec egestas non nisi cras ornare arcu.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Backend Development</h4>
+              <p>
+                Developing secure and scalable backend systems using Node.js and Express.js,
+                including server-side logic, authentication, and database integration.
+              </p>
+              <a href="service-details.html?service=backend" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
+
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-phone"></i>
               </div>
-              <h4>Mobile Apps</h4>
-              <p>Vivamus suscipit tortor eget felis porttitor volutpat quisque velit nisi pretium ut lacinia.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Database Design &amp; Management</h4>
+              <p>
+                Designing and managing efficient databases using MySQL, creating well-structured
+                data models, optimizing queries, and ensuring reliable data storage.
+              </p>
+              <a href="service-details.html?service=database" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
+
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-megaphone"></i>
               </div>
-              <h4>Digital Marketing</h4>
-              <p>Nulla porttitor accumsan tincidunt curabitur aliquet quam id dui posuere blandit mauris.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>E-commerce Development</h4>
+              <p>
+                Building modern e-commerce websites with product management, user authentication,
+                admin dashboards, and database integration to support online businesses.
+              </p>
+              <a href="service-details.html?service=ecommerce" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
+
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-search"></i>
               </div>
-              <h4>SEO Services</h4>
-              <p>Pellentesque in ipsum id orci porta dapibus donec sollicitudin molestie malesuada proin.</p>
-              <a href="service-details.html" class="read-more">
-                <span>Explore</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h4>Analytics</h4>
-              <p>Sed porttitor lectus nibh curabitur arcu erat accumsan id imperdiet et porttitor at sem.</p>
-              <a href="service-details.html" class="read-more">
-                <span>Explore</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h4>Security</h4>
-              <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus mauris blandit aliquet.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>API Integration &amp; Testing</h4>
+              <p>
+                Integrating and testing RESTful APIs using Postman, connecting frontend
+                applications with backend services, and ensuring reliable data communication.
+              </p>
+              <a href="service-details.html?service=api" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -581,17 +715,21 @@
           </div>
 
         </div>
+
 
         <div class="row mt-5">
           <div class="col-12" data-aos="fade-up" data-aos-delay="200">
             <div class="cta-box">
               <div class="row align-items-center">
                 <div class="col-lg-8">
-                  <h3>Transform Your Vision Into Reality</h3>
-                  <p>Partner with us to bring your ideas to life with innovative solutions tailored to your needs</p>
+                  <h3>Let's Build Something Great Together</h3>
+                  <p>
+                    Have an idea or a project in mind? Let's turn it into a modern,
+                    reliable, and scalable digital solution.
+                  </p>
                 </div>
                 <div class="col-lg-4 text-lg-end text-center">
-                  <a href="service-details.html" class="cta-btn">Start Your Project</a>
+                  <a href="service-details.html?service=fullstack" class="cta-btn">Explore My Services</a>
                 </div>
               </div>
             </div>
@@ -600,245 +738,209 @@
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section>
+    <!-- End Services Section -->
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Portfolio</span>
+        <span class="subtitle">My Work</span>
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
-      </div><!-- End Section Title -->
+        <p>
+          Explore my projects in full-stack web development, e-commerce,
+          backend systems, and database-driven applications.
+          Each project reflects my passion for building practical,
+          modern, and reliable digital solutions.
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">All Work</li>
-            <li data-filter=".filter-creative">Creative</li>
-            <li data-filter=".filter-digital">Digital</li>
-            <li data-filter=".filter-strategy">Strategy</li>
-            <li data-filter=".filter-development">Development</li>
+            <li data-filter="*" class="filter-active">All Projects</li>
+            <li data-filter=".filter-web">Web Applications</li>
+            <li data-filter=".filter-backend">Backend</li>
+            <li data-filter=".filter-fullstack">Full Stack</li>
           </ul>
 
+
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Creative Design</span>
-                      <h4>Visual Identity System</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Branding</span>
-                    <span class="tag">Identity</span>
-                  </div>
-                  <div class="project-year">2024</div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+            <!-- Nasr Supermarket -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Digital Experience</span>
-                      <h4>Interactive Web Platform</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Web Design</span>
-                    <span class="tag">Development</span>
-                  </div>
-                  <div class="project-year">2024</div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-              <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Brand Strategy</span>
-                      <h4>Market Positioning</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Strategy</span>
-                    <span class="tag">Consulting</span>
-                  </div>
-                  <div class="project-year">2023</div>
-                </div>
-              </div>
-            </div>
+                  <img src="assets/img/portfolio/Nasr-Supermarket4.png" alt="Nasr Supermarket" class="img-fluid"
+                    loading="lazy">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Development Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Full Stack</span>
-                      <h4>Custom Application</h4>
+                      <span class="project-category">E-commerce Web Application</span>
+                      <h4>Nasr Supermarket</h4>
                     </div>
+
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-link">
+                      <a href="assets/img/portfolio/Nasr-Supermarket4.png" class="glightbox portfolio-link"
+                        title="Nasr Supermarket">
                         <i class="bi bi-plus-lg"></i>
                       </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
+                      <a href="https://nasr-supermarket-production.up.railway.app/" target="_blank"
+                        rel="noopener noreferrer" class="portfolio-link" title="Visit Project">
+                        <i class="bi bi-link-45deg"></i>
                       </a>
                     </div>
                   </div>
                 </div>
+
                 <div class="portfolio-meta">
                   <div class="project-tags">
                     <span class="tag">React</span>
+                    <span class="tag">Dashboard</span>
+                    <span class="tag">Inventory</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End Nasr Supermarket -->
+
+
+            <!-- Ordera -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+              <div class="portfolio-card">
+
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/ordera3.png" alt="Ordera Restaurant Ordering System" class="img-fluid"
+                    loading="lazy">
+
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Full Stack Development</span>
+                      <h4>Ordera – Restaurant Ordering System</h4>
+                    </div>
+
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/ordera3.png" class="glightbox portfolio-link"
+                        title="Ordera Restaurant Ordering System">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="https://ordera.up.railway.app/" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link" title="Visit Project">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-meta">
+                  <div class="project-tags">
                     <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MySQL</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2026</div>
                 </div>
+
               </div>
             </div>
+            <!-- End Ordera -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+
+            <!-- ENG SUPPLY -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
               <div class="portfolio-card">
+
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/eng-supply.png" alt="ENG SUPPLY Distribution Management System"
+                    class="img-fluid" loading="lazy">
+
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Art Direction</span>
-                      <h4>Campaign Design</h4>
+                      <span class="project-category">Backend Development</span>
+                      <h4>ENG SUPPLY</h4>
                     </div>
+
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-link">
+                      <a href="assets/img/portfolio/eng-supply.png" class="glightbox portfolio-link" title="ENG SUPPLY">
                         <i class="bi bi-plus-lg"></i>
                       </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
+                      <a href="https://github.com/Engabdallh/ENG-SUPPLY" target="_blank" rel="noopener noreferrer"
+                        class="portfolio-link" title="View GitHub Repository">
+                        <i class="bi bi-github"></i>
                       </a>
                     </div>
                   </div>
                 </div>
+
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Creative</span>
-                    <span class="tag">Campaign</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MySQL</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2026</div>
                 </div>
+
               </div>
             </div>
+            <!-- End ENG SUPPLY -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Digital Product</span>
-                      <h4>Mobile Experience</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Mobile</span>
-                    <span class="tag">UI/UX</span>
-                  </div>
-                  <div class="project-year">2023</div>
-                </div>
+          </div>
+
+
+          <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3>Have a Project in Mind?</h3>
+                <p>
+                  Let's work together to transform your ideas into
+                  modern, functional, and reliable digital solutions.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="#contact" class="btn btn-accent">Let's Work Together</a>
               </div>
             </div>
           </div>
 
         </div>
-
-        <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3>Like what you see?</h3>
-              <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="#contact" class="btn btn-accent">Let's Work Together</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Contact</span>
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
-      </div><!-- End Section Title -->
+        <span class="subtitle">Get In Touch</span>
+        <h2>Let's Work Together</h2>
+        <p>
+          Have a project idea, a business need, or an opportunity to collaborate?
+          I'd love to hear from you. Feel free to reach out and let's build
+          something meaningful together.
+        </p>
+      </div>
 
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-4">
+
             <div class="info-item">
               <div class="icon-wrapper">
                 <i class="bi bi-geo-alt"></i>
               </div>
               <div>
-                <h3>Address</h3>
-                <p>2847 Oak Street, San Francisco, CA 94102</p>
+                <h3>Location</h3>
+                <p>Irbid, Jordan</p>
               </div>
             </div>
 
@@ -848,7 +950,9 @@
               </div>
               <div>
                 <h3>Call Me</h3>
-                <p>+1 (555) 234-5678</p>
+                <p>
+                  <a href="tel:+962782950775">+962 78 295 0775</a>
+                </p>
               </div>
             </div>
 
@@ -858,125 +962,130 @@
               </div>
               <div>
                 <h3>Email Me</h3>
-                <p>alex@example.com</p>
+                <p>
+                  <a href="mailto:abdallhshatnawi112@gmail.com">
+                    abdallhshatnawi112@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-
         </div>
-
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main>
 
+
+  <!-- Footer -->
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
       <div class="row gy-4">
+
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Craftivo</span>
+            <span class="sitename">Abdallh Shatnawi</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+
+          <p>
+            Software Engineering graduate and Full Stack Developer
+            passionate about building modern web applications,
+            scalable backend systems, and reliable digital solutions.
+          </p>
+
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Engabdallh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
           </div>
         </div>
 
+
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
+
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>My Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="service-details.html?service=fullstack">Full Stack Development</a></li>
+            <li><a href="service-details.html?service=frontend">Frontend Development</a></li>
+            <li><a href="service-details.html?service=backend">Backend Development</a></li>
+            <li><a href="service-details.html?service=database">Database Management</a></li>
+            <li><a href="service-details.html?service=api">API Development</a></li>
           </ul>
         </div>
+
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <h4>Contact Me</h4>
+
+          <p>Irbid, Jordan</p>
+
+          <p class="mt-4">
+            <strong>Phone:</strong>
+            <span>
+              <a href="tel:+962782950775">+962 78 295 0775</a>
+            </span>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <span>
+              <a href="mailto:abdallhshatnawi112@gmail.com">
+                abdallhshatnawi112@gmail.com
+              </a>
+            </span>
+          </p>
         </div>
 
       </div>
     </div>
 
+
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <p>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">Abdallh Shatnawi</strong>
+        <span>All Rights Reserved</span>
+      </p>
+
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed &amp; Developed by
+        <a href="https://github.com/Engabdallh" target="_blank" rel="noopener noreferrer">
+          Abdallh Shatnawi
+        </a>
       </div>
     </div>
 
   </footer>
 
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -987,6 +1096,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
+
+  <!-- Dynamic Service Details -->
+  <script src="assets/js/service-details.js"></script>
 
 </body>
 

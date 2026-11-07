@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +28,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/language.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Craftivo
@@ -39,44 +42,24 @@
 <body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
+      <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">Craftivo</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <a href="index.html#services" class="btn-getstarted">
+          <i class="bi bi-arrow-left me-2"></i>
+          <span data-en="Back to Services" data-ar="العودة إلى الخدمات">
+            Back to Services
+          </span>
+        </a>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+        <button id="language-toggle" class="btn-getstarted language-toggle" type="button">
+          العربية
+        </button>
+      </div>
 
     </div>
   </header>
@@ -167,7 +150,9 @@
                 <span class="badge">Premium Service</span>
                 <h2>Professional Web Development That Drives Results</h2>
               </div>
-              <p class="lead-text">Transform your digital presence with custom web solutions built to perform. I specialize in creating high-performance websites that combine stunning design with powerful functionality, delivering exceptional user experiences that convert visitors into customers.</p>
+              <p class="lead-text">Transform your digital presence with custom web solutions built to perform. I
+                specialize in creating high-performance websites that combine stunning design with powerful
+                functionality, delivering exceptional user experiences that convert visitors into customers.</p>
             </div>
 
             <div class="service-image-showcase" data-aos="zoom-in" data-aos-delay="300">
@@ -190,7 +175,8 @@
                       <i class="bi bi-layers"></i>
                     </div>
                     <h4>Modern Architecture</h4>
-                    <p>Scalable, maintainable code structure using the latest web technologies and best practices for long-term success.</p>
+                    <p>Scalable, maintainable code structure using the latest web technologies and best practices for
+                      long-term success.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -199,7 +185,8 @@
                       <i class="bi bi-speedometer2"></i>
                     </div>
                     <h4>Lightning Fast</h4>
-                    <p>Optimized performance with lazy loading, code splitting, and CDN integration for instant page loads.</p>
+                    <p>Optimized performance with lazy loading, code splitting, and CDN integration for instant page
+                      loads.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -208,7 +195,8 @@
                       <i class="bi bi-phone-landscape"></i>
                     </div>
                     <h4>Responsive Design</h4>
-                    <p>Pixel-perfect layouts that adapt seamlessly across all devices, from mobile phones to large desktop screens.</p>
+                    <p>Pixel-perfect layouts that adapt seamlessly across all devices, from mobile phones to large
+                      desktop screens.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -217,7 +205,8 @@
                       <i class="bi bi-graph-up"></i>
                     </div>
                     <h4>SEO Optimized</h4>
-                    <p>Search engine friendly structure with semantic HTML, meta tags, and performance optimizations built in.</p>
+                    <p>Search engine friendly structure with semantic HTML, meta tags, and performance optimizations
+                      built in.</p>
                   </div>
                 </div>
               </div>
@@ -230,7 +219,8 @@
                   <div class="timeline-marker">1</div>
                   <div class="timeline-content">
                     <h4>Strategy &amp; Planning</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                     <span class="duration">1 week</span>
                   </div>
                 </div>
@@ -238,7 +228,8 @@
                   <div class="timeline-marker">2</div>
                   <div class="timeline-content">
                     <h4>Design &amp; Prototyping</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam eaque ipsa quae.</p>
                     <span class="duration">1-2 weeks</span>
                   </div>
                 </div>
@@ -246,7 +237,8 @@
                   <div class="timeline-marker">3</div>
                   <div class="timeline-content">
                     <h4>Development &amp; Testing</h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                      deleniti atque corrupti quos dolores.</p>
                     <span class="duration">2-3 weeks</span>
                   </div>
                 </div>
@@ -254,7 +246,8 @@
                   <div class="timeline-marker">4</div>
                   <div class="timeline-content">
                     <h4>Launch &amp; Optimization</h4>
-                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem.</p>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                      consequatur vel illum qui dolorem.</p>
                     <span class="duration">1 week</span>
                   </div>
                 </div>
@@ -271,7 +264,9 @@
                   <i class="bi bi-star-fill"></i>
                 </div>
                 <blockquote>
-                  "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Exceptional work and outstanding communication throughout."
+                  "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                  magni dolores eos qui ratione voluptatem sequi nesciunt. Exceptional work and outstanding
+                  communication throughout."
                 </blockquote>
                 <div class="client-info">
                   <img src="assets/img/person/person-m-5.webp" alt="Michael Chen" class="client-avatar">
@@ -328,72 +323,102 @@
 
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
       <div class="row gy-4">
+
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Craftivo</span>
+            <span class="sitename">Abdallh Shatnawi</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+
+          <p>
+            Software Engineering graduate and Full Stack Developer
+            passionate about building modern web applications,
+            scalable backend systems, and reliable digital solutions.
+          </p>
+
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Engabdallh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
           </div>
         </div>
 
+
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
+
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>My Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="service-details.html?service=fullstack">Full Stack Development</a></li>
+            <li><a href="service-details.html?service=frontend">Frontend Development</a></li>
+            <li><a href="service-details.html?service=backend">Backend Development</a></li>
+            <li><a href="service-details.html?service=database">Database Management</a></li>
+            <li><a href="service-details.html?service=api">API Development</a></li>
           </ul>
         </div>
+
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <h4>Contact Me</h4>
+
+          <p>Irbid, Jordan</p>
+
+          <p class="mt-4">
+            <strong>Phone:</strong>
+            <span>
+              <a href="tel:+962782950775">+962 78 295 0775</a>
+            </span>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <span>
+              <a href="mailto:abdallhshatnawi112@gmail.com">
+                abdallhshatnawi112@gmail.com
+              </a>
+            </span>
+          </p>
         </div>
 
       </div>
     </div>
 
+
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <p>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">Abdallh Shatnawi</strong>
+        <span>All Rights Reserved</span>
+      </p>
+
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed &amp; Developed by
+        <a href="https://github.com/Engabdallh" target="_blank" rel="noopener noreferrer">
+          Abdallh Shatnawi
+        </a>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -411,6 +436,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Service Details -->
+  <script src="assets/js/service-details.js"></script>
+
+  <script src="assets/js/language.js"></script>
 
 </body>
 
